@@ -1,3 +1,6 @@
+# Ignore entire folder not shared folder/
+not shared/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
