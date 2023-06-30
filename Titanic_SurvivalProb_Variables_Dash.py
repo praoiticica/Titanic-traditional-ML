@@ -6,12 +6,13 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from dash.dependencies import Input, Output
 
+# Load the dataset
+myTitanic_dataset = 'https://raw.githubusercontent.com/praoiticica/Titanic-traditional-ML/main/titanic_datasets/titanic_cleaned.csv'
+df = pd.read_csv(myTitanic_dataset)
+
 # Create the Dash application
 app = dash.Dash(__name__)
 server = app.server
-
-# Load the dataset
-df = pd.read_csv('titanic_datasets/titanic_cleaned.csv')  # Replace 'your_dataset.csv' with your actual dataset file
 
 # Define the layout of the web application
 app.layout = html.Div([
