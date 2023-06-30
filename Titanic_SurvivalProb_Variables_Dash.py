@@ -8,6 +8,7 @@ from dash.dependencies import Input, Output
 
 # Create the Dash application
 app = dash.Dash(__name__)
+server = app.server
 
 # Load the dataset
 df = pd.read_csv('titanic_datasets/titanic_cleaned.csv')  # Replace 'your_dataset.csv' with your actual dataset file
